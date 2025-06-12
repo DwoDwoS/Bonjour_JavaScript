@@ -1,18 +1,16 @@
+let firstname = prompt("Quel est ton prénom ?");
+let message = `Bonjour ${firstname} !`
+
 function sayHello(firstname, hour) {
-
-// let firstname = "Beyonce";
-
-let message = `Bonjour ${firstname} !`;
-
 if(hour>=18) {
     console.log(`Bonsoir ${firstname} !`);
 } else {
     console.log(`Bonjour ${firstname} !`);
 }
 
-// console.log(message)
+document.querySelector('h1').innerText = message;
 };
 
-sayHello("Beyonce", 11);
-sayHello("Beyonce", 18);
-sayHello("Beyonce", 17);
+sayHello(firstname, 11);
+sayHello(firstname, 18);
+sayHello(firstname, 17);
